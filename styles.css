@@ -6,3 +6,54 @@ available in the app when your plugin is enabled.
 If your plugin does not need CSS, delete this file.
 
 */
+
+.menublock-container {
+	display: flex;
+	width: 100%;
+}
+
+.menublock {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	padding: 5px;
+	margin: 5px;
+
+	text-align: center;
+	
+	overflow: hidden;
+	background-clip: border-box;
+	border-radius: 10px;
+	border-width: 1.5px;
+	border-color: black;
+	border-style: solid;
+}
+
+.menublock-header {
+	width: 100%;
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+.menublock-content {
+	margin-left: 15px;
+	margin-right: 15px;
+	flex: 1;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.menublock-meal {
+	font-size: 1.8em;
+}
+
+.menublock-notes {
+	color: dimgray;
+}
+
+.menublock-done .menublock-meal {
+	text-decoration: line-through;
+}
